@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.coolweather.TopActivity">
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/tv_queryWeather"
+            android:drawableTop="@drawable/tianti"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="查询天气"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_queryViolation"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="查询违章"
+            android:drawableTop="@drawable/qiche"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_below="@+id/ll_one"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/tv_queryBaidu"
+            android:drawableTop="@drawable/baidu"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="百度一下"
+            android:layout_margin="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ll_one"
+            android:layout_width="180dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:text="Thanks:感谢宝哥和小龙女的指导     Author:我的一切"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></TextView>
+
+
+</RelativeLayout>

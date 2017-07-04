@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_query_violation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e1e1"
+    tools:context="com.example.administrator.coolweather.QueryViolationActivity">
+
+    <include
+        android:id="@+id/in_querywz"
+        layout="@layout/title_showwz" />
+
+    <LinearLayout
+        android:id="@+id/ll_queryOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/in_querywz"
+        android:layout_marginTop="11dp"
+
+        android:background="#f5e9e9"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="机动车信息"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="left|center"
+                android:text="机动车类型:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_lstype"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/next"
+                android:gravity="left|center"
+                android:text="小型汽车"
+                android:textColor="#c3bebe"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="left|center"
+                android:text="机动车号牌:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_lsprefis"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="京" />
+
+            <EditText
+                android:id="@+id/et_lsnum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="left|center"
+                android:hint="请输入车牌号码"
+                android:textColorHint="#c3bebe"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="left|center"
+                android:text="发 动 机  号:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_frameno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:hint="请输入发动机号"
+                android:textColorHint="#c3bebe"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="left|center"
+                android:text="车    架    号:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_engineno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:hint="请输入车架号"
+                android:textColorHint="#c3bebe"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_queryOne"
+        android:layout_margin="10dp"
+        android:background="#ecc5c5"
+        android:onClick="queryWeizhang"
+        android:text="查询"
+        android:textSize="30dp" />
+</RelativeLayout>

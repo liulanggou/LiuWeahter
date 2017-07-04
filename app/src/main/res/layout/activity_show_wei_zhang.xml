@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_wei_zhang"
+    android:background="#ede4e4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.coolweather.ShowWeiZhangActivity">
+    <include android:id="@+id/in_showwz" layout="@layout/title_showwz"/>
+    <LinearLayout
+        android:id="@+id/ll_wzone"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/in_showwz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="车牌号:"
+            android:textSize="25sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_chepaihao"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_below="@+id/ll_wzone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_showWZ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+</RelativeLayout>
